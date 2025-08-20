@@ -25,7 +25,6 @@
   .search { display: flex; gap: 8px; }
   .search input { flex: 1; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border); background: #fff; font-size: 1rem; }
   .filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-  .filters select, .filters input[type="number"] { padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; background: #fff; }
   .cards { display: grid; grid-template-columns: 1fr; gap: 12px; }
   @media (min-width: 680px) { .cards { grid-template-columns: 1fr 1fr; } }
   .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 12px; box-shadow: 0 8px 20px rgba(27,143,58,0.06); }
@@ -165,14 +164,14 @@
 <div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นางสาวชไมพร ชุมจันทร์</span><span class="dept">สำนักวิชาการวิทยาศาสตร์การแพทย์</span></div>
 <div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นางสาวอภิสรา โคมเดือน</span><span class="dept">สำนักวิชาการวิทยาศาสตร์การแพทย์</span></div>
 <div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นางสาวพิทยา เหล่าสมบัติ</span><span class="dept">สำนักวิชาการวิทยาศาสตร์การแพทย์</span></div></div></div>
-    <div class="card" data-car="6">
+    <div class="card" data-car="6*">
       <div class="card-header">
         <div class="car-left">
-          <div class="car-title">รถคันที่ <span class="car-id">6</span> (<span class="round">เช้า</span>)</div>
+          <div class="car-title">รถคันที่ <span class="car-id">6*</span></div>
           <div class="car-sub">ทะเบียนรถ: <span class="plate">ทะเบียนรถ : ฮภ-5145 กทม</span></div>
         </div>
         <div class="car-right">
-          <a class="jump" href="#car-6" id="car-6">#6</a>
+          <a class="jump" href="#car-6*" id="car-6*">#6*</a>
         </div>
       </div>
       <div class="card-body">
@@ -201,8 +200,20 @@
 <div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นายรุ่งโรจน์ จันทร์สูง (ขากลับ ขึ้นรถคัน 20
 กลับสนามบินหัวหิน 
 12.10)</span><span class="dept">ศวก. 1 เชียงใหม่</span></div>
-<div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นางสาวเบญจภรณ์ ปาวิน (ขากลับ ขึ้นรถคัน 20)</span><span class="dept">ศวก. 1 เชียงใหม่</span></div>
-<div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นายจุลภัทร คงเจริญกิจกุล</span><span class="dept">กองแผนงานและวิชาการ</span></div>
+<div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นางสาวเบญจภรณ์ ปาวิน (ขากลับ ขึ้นรถคัน 20)</span><span class="dept">ศวก. 1 เชียงใหม่</span></div></div></div>
+    <div class="card" data-car="6">
+      <div class="card-header">
+        <div class="car-left">
+          <div class="car-title">รถคันที่ <span class="car-id">6</span> (<span class="round">เช้า</span>)</div>
+          <div class="car-sub">ทะเบียนรถ: <span class="plate">ทะเบียนรถ : ฮภ-5140</span></div>
+        </div>
+        <div class="car-right">
+          <a class="jump" href="#car-6" id="car-6">#6</a>
+        </div>
+      </div>
+      <div class="card-body">
+    <div class="driver"><span class="badge driver">คนขับ</span><span class="name">นายชาตรี โพธิ์ทอง</span> โทร: <a href="tel:0897616915">089-761-6915</a></div>
+<div class="section-title">รายชื่อผู้โดยสาร</div><div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นายจุลภัทร คงเจริญกิจกุล</span><span class="dept">กองแผนงานและวิชาการ</span></div>
 <div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นางสาวพิมพ์กมล เทียมปาน</span><span class="dept">กองแผนงานและวิชาการ</span></div>
 <div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นายณัฐดนัย แซ่หลิว</span><span class="dept">กองแผนงานและวิชาการ</span></div>
 <div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นางสาวลัดดาวัลย์ วงค์ชาชม</span><span class="dept">กองแผนงานและวิชาการ</span></div>
@@ -225,8 +236,21 @@
 <div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นางสาวนันทิกานต์ งอกงาม</span><span class="dept">กองแผนงานและวิชาการ</span></div>
 <div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นายสิทธินันท์ สุวรรณทัพ</span><span class="dept">กองแผนงานและวิชาการ</span></div>
 <div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นางสาวอาทิตยา ชื่อเพราะ</span><span class="dept">กองแผนงานและวิชาการ</span></div>
-<div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นายสหรัฐ เพชรณิชกุล</span><span class="dept">กองแผนงานและวิชาการ</span></div>
-<div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นางสาวสุภาภรณ์ กสิวัฒน์ (ขากลับ ขึ้นรถคัน 20
+<div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นายสหรัฐ เพชรณิชกุล</span><span class="dept">กองแผนงานและวิชาการ</span></div></div></div>
+    <div class="card" data-car="7*">
+      <div class="card-header">
+        <div class="car-left">
+          <div class="car-title">รถคันที่ <span class="car-id">7*</span> (<span class="round">สนามบินหัวหิน 
+12.10</span>)</div>
+          <div class="car-sub">ทะเบียนรถ: <span class="plate">ทะเบียนรถ : ฮย-9729 กทม.</span></div>
+        </div>
+        <div class="car-right">
+          <a class="jump" href="#car-7*" id="car-7*">#7*</a>
+        </div>
+      </div>
+      <div class="card-body">
+    <div class="driver"><span class="badge driver">คนขับ</span><span class="name">นายบัญชา เปียดี</span> โทร: <a href="tel:0922528466">092-252-8466</a></div>
+<div class="section-title">รายชื่อผู้โดยสาร</div><div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นางสาวสุภาภรณ์ กสิวัฒน์ (ขากลับ ขึ้นรถคัน 20
 รับสนามบินดอนเมือง
 16.30)</span><span class="dept">ศวก. 1 เชียงใหม่</span></div>
 <div class="person"><span class="badge pax">ผู้โดยสาร</span><span class="name">นางพณิชชา วิภักดี (ขากลับ ขึ้นรถคัน 20)</span><span class="dept">ศวก. 1 เชียงใหม่</span></div>
